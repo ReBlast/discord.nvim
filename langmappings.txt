@@ -147,3 +147,4 @@ yml=YAML|yaml
 zig=Zig|zig
 zsh=Zsh script|bash
 zu=Zimbu|zimbu
+custom=Custom Language|https://i.ibb.co/vYThdNq/Vimlogo.png
