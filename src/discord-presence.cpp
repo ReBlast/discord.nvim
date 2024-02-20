@@ -29,6 +29,7 @@ public:
   unordered_map<string, pair<string, string>> langmap;
   
   string projectname, filename, fileext;
+  unsigned int currentfile, openfiles;
   long int StartTime;
   bool shouldUpdate;
   int initlangmapsize;
@@ -74,6 +75,8 @@ public:
     discordPresence.largeImageText = language.first.c_str();
     discordPresence.smallImageText = "The One True Text Editor";
     discordPresence.smallImageKey = "https://i.ibb.co/vYThdNq/Vimlogo.png";
+    discordPresence.partySize = (int) currentfile;
+    discordPresence.partyMax = (int) openfiles;
     discordPresence.instance = 0;
     Discord_UpdatePresence(&discordPresence);
   }
@@ -149,7 +152,8 @@ public:
   }
   
   void updateFileNums(const unsigned int currfile, const unsigned int allfiles) {
-    
+    currentfile = currfile;
+    openfiles = allfiles;
   }
 
   void setFileExt(const string ext) {
