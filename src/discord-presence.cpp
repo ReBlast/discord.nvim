@@ -71,10 +71,10 @@ public:
     discordPresence.details = projectname.c_str();
     discordPresence.state = ("Editing " + filename + " (" + language.first + ")").c_str();
     discordPresence.startTimestamp = StartTime;
-    discordPresence.largeImageKey = "neovim";
-    discordPresence.largeImageText = "The One True Text Editor";
-    discordPresence.smallImageText = language.first.c_str();
-    discordPresence.smallImageKey = language.second.c_str();
+    discordPresence.largeImageKey = language.first.c_str();
+    discordPresence.largeImageText = language.second.c_str();
+    discordPresence.smallImageText = "neovim";
+    discordPresence.smallImageKey = "The One True Text Editor";
     discordPresence.partySize = (int) currentfile;
     discordPresence.partyMax = (int) openfiles;
     discordPresence.instance = 0;
