@@ -74,7 +74,7 @@ public:
     discordPresence.largeImageKey = language.second.c_str();
     discordPresence.largeImageText = language.first.c_str();
     discordPresence.smallImageText = "The One True Text Editor";
-    discordPresence.smallImageKey = "https://i.ibb.co/vYThdNq/Vimlogo.png";
+    discordPresence.smallImageKey = "neovim";
     discordPresence.partySize = (int) currentfile;
     discordPresence.partyMax = (int) openfiles;
     discordPresence.instance = 0;
