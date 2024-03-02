@@ -73,7 +73,7 @@ public:
     discordPresence.startTimestamp = StartTime;
     discordPresence.largeImageKey = language.second.c_str();
     discordPresence.largeImageText = language.first.c_str();
-    discordPresence.smallImageText = "The One True Text Editor";
+    discordPresence.smallImageText = "The Superior Text Editor";
     discordPresence.smallImageKey = "neovim";
     discordPresence.partySize = (int) currentfile;
     discordPresence.partyMax = (int) openfiles;
